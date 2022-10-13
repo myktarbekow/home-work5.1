@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       {comment.map((el) => {
         return (
-          <div className="Container">
+          <div key={el.id} className="Container">
             <div className="Item-first">
               <img src={el.author.avatarUrl} alt="code" />
               <h1>{el.author.name}</h1>
